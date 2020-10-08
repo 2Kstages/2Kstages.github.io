@@ -48,7 +48,56 @@ th { text-align: left; }
 /*-------------------------------------------------*/
 body {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	font-size: small;
-	background-color: #cfe6e6;
-	color: #804040;
+	font-size: normal;
+	background-color: #010B14;
+	color: #B6C0C1;
+	display: grid;
+	height: 100vh;
+	grid-template-rows: auto 1fr auto;
 	}
+
+a		{ color: #D9BBA1; }
+a:hover { color: #FFF7F0; }	
+	
+img.border	{
+	border: solid 1px #B6C0C1; 
+	border-radius: 5px;
+	}
+
+/*-------------------------*/
+/*HEADER STYLES*/
+header {
+	padding: 1rem;
+	text-align: center;
+	}
+
+div#menu {
+	margin: 1rem 0 0;
+	}
+	
+div#menu a {
+	margin: 0 1rem;
+	}
+
+/*-------------------------*/
+/*MAIN STYLES*/	
+main {
+	padding: 0 1rem;
+	}
+
+p {
+	padding: 0.5rem 0;
+	}
+	
+div#frontSpread {
+	text-align: center;
+	}
+	
+/*-------------------------*/
+/*FOOTER STYLES*/
+footer {
+	padding: 1rem;
+	text-align: center;
+	}
+
+	
