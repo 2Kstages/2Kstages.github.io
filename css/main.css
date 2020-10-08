@@ -45,7 +45,8 @@ th { text-align: left; }
 .clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
 .clearfix { zoom:1; } /*for IE*/
 
-/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+
 body {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	font-size: normal;
