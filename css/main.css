@@ -150,7 +150,7 @@ ul { margin: 1rem; }
 ul li { 
 	margin-bottom: 0.5rem;
 	list-style-type: disc; 
-	list-style-position: inside;
+	list-style-position: outside;
 	}
 
 /*tables*/
