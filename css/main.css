@@ -81,10 +81,11 @@ body {
 header 			{ padding: 1rem; text-align: center; }
 div#menu 		{ margin: 1rem 0 0; }
 div#menu a 		{ margin: 0 1rem; }
-main 			{ padding: 0 2.5rem; }	
+main 			{ padding: 0 2.5rem; min-width: 0; } /*min-width fixes chart bug*/	
 footer 			{ padding: 1rem; text-align: center; }	
 div#frontSpread { text-align: center; }	
 div#footerLink	{ margin-top: 2rem; margin-left: 0.5rem; font-weight: bold; }
+div.chart		{ margin-top: 2rem; }
 	
 	
 /*miscellaneous*/	
@@ -153,10 +154,13 @@ ul li {
 	list-style-position: outside;
 	}
 
+ul.AtoZ { font-size: smaller; }
+
 /*tables*/
 table.menu { 
 	text-align: left;
 	margin-top: 1rem;
+	margin-bottom: 1rem;
 	}	
 	
 table.menu th, table.menu td { 
@@ -167,7 +171,22 @@ table.gallery 		{ font-size: smaller; margin: 1rem 0; }
 table.gallery td 	{ padding: 0 2px; }
 table.gallery img 	{ width: 195px; }
 
+table#dataTable	{ display:none }
 
+table.AtoZ {
+	font-size: 8pt;
+	margin-top: 1rem;
+	} 
+	
+table.AtoZ th {	
+	box-shadow: inset 0 0 10px rgba(217, 187, 161, 0.6)
+	}
+
+table.AtoZ th, table.AtoZ td { 
+	border: solid 1px #B6C0C1;
+	padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+	}
+	
 /*side quotes*/
 div.quote {
 		display: inline-block;
