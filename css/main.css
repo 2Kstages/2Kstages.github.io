@@ -226,24 +226,3 @@ div.border	{
 	
 div.border p > strong:first-child { border: none; padding: 0; }
 div.border p { margin: 0; }
-
-/*TEST*/
-
-/*trying to achieve title attribute functions on a touch-screen*/
-@media (pointer: coarse), (hover: none) {
-      [title] {
-        position: relative;
-        display: inline-flex;
-        justify-content: center;
-      }
-      [title]:focus::after {
-        content: attr(title);
-        position: absolute;
-        top: 90%;
-        color: #000;
-        background-color: #fff;
-        border: 1px solid;
-        width: fit-content;
-        padding: 3px;
-      }
-    }
