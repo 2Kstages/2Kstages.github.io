@@ -45,8 +45,10 @@ th { text-align: left; }
 .clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
 .clearfix { zoom:1; } /*for IE*/
 
+
 /*------------------------*//*------------------------*//*------------------------*/
 /*GENERAL STYLES*/
+/*------------------------*//*------------------------*//*------------------------*/
 
 body {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -76,7 +78,9 @@ body {
 	
 	QUOTE BACKGROUND:	182930
 */
-	
+
+
+/*------------------------*//*------------------------*//*------------------------*/	
 /*layout*/	
 header 			{ padding: 1rem; text-align: center; }
 div#menu 		{ margin: 1rem 0 0; }
@@ -87,7 +91,8 @@ div#frontSpread { text-align: center; }
 div#footerLink	{ margin-top: 2rem; margin-left: 0.5rem; font-weight: bold; }
 div.chart		{ margin-top: 2rem; }
 	
-	
+
+/*------------------------*//*------------------------*//*------------------------*/	
 /*miscellaneous*/	
 hr 			{ margin: 1rem 5rem; }
 hr.splitter	{ margin: 3rem 3rem 2rem 0; }
@@ -122,6 +127,7 @@ p > strong:first-child {
 p > strong:first-child.noEmph { border: none; padding: 0; }
 	
 
+/*------------------------*//*------------------------*//*------------------------*/
 /*images*/
 img.border {
 	border: solid 1px #B6C0C1; 
@@ -139,12 +145,14 @@ main img {
 	border-radius: 5px;
 	box-shadow: 0 8px 6px -6px rgba(182, 192, 193, 0.6);
 	}	
-	
+
+/*------------------------*//*------------------------*//*------------------------*/	
 /*links*/
 a			{ color: #D9BBA1; }
 a:hover 	{ color: #FFF7F0; }
 a.disabled 	{ color: #FFF7F0; }	
 
+/*------------------------*//*------------------------*//*------------------------*/
 /*lists*/
 ul { margin: 1rem; }
 
@@ -156,6 +164,7 @@ ul li {
 
 ul.AtoZ { font-size: smaller; }
 
+/*------------------------*//*------------------------*//*------------------------*/
 /*tables*/
 table.menu { 
 	text-align: left;
@@ -184,9 +193,10 @@ table.AtoZ th {
 
 table.AtoZ th, table.AtoZ td { 
 	border: solid 1px #B6C0C1;
-	padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+	padding: 0.2rem 0.2rem 0.2rem 0.2rem;
 	}
 	
+/*------------------------*//*------------------------*//*------------------------*/
 /*side quotes*/
 div.quote {
 		display: inline-block;
@@ -204,6 +214,7 @@ div.quote {
 	
 div.quote p	{ padding: 0.5rem; }
 
+/*------------------------*//*------------------------*//*------------------------*/
 /*spoilers*/
 .spoiler {color: #182930; background-color: #182930; }
 .spoiler:hover, 
@@ -226,3 +237,36 @@ div.border	{
 	
 div.border p > strong:first-child { border: none; padding: 0; }
 div.border p { margin: 0; }
+
+/*------------------------*//*------------------------*//*------------------------*/
+/*tooltips*/
+
+/* Tooltip container */
+.tt {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted #D9BBA1; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tt .ttt {
+  visibility: hidden;
+  width: auto;
+  background-color: #182930;
+  color: #FFF7F0;
+  border: 1px solid #D9BBA1;
+  text-align: left;
+  padding:4px 5px;
+  border-radius: 6px;
+  top: 5px;
+  left: 20px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tt:hover .ttt, .tt:focus .ttt, .tt:active .ttt {
+  visibility: visible;
+}
