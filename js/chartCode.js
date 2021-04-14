@@ -5,14 +5,14 @@ function BuildMixedChart(chart, labels, barVals, linVals) {
     data: {
       labels: labels, // Our labels
       datasets: [{
-        label: 'pages', // Name the series
+        label: 'pages [toggle]', // Name the series
         data: barVals, // Our values
 		backgroundColor: 'rgba(255, 99, 132, 0.2)',
 		borderColor: 'rgba(255,99,132,1)',
         borderWidth: 1 // Specify bar border width
       },
 	  {
-        label: 'episodes', // Name the series
+        label: 'parts [toggle]', // Name the series
         data: linVals, // Our values
 		backgroundColor: 'rgba(54, 162, 235, 0.2)',
 		borderColor: 'rgba(54, 162, 235, 1)',
@@ -23,7 +23,12 @@ function BuildMixedChart(chart, labels, barVals, linVals) {
     options: {
       responsive: true, // Instruct chart js to respond nicely.
       maintainAspectRatio: false, // Add to prevent default behavior of full-width/height 
-    }
+	  tooltips: {
+            backgroundColor: 'rgba(24, 41, 48, 0.8)', //182930
+			borderColor: 'rgba(255, 247, 240, 1.0)', //FFF7F0
+			borderWidth: 1
+		}
+	}
   });
   return myChart;
 }
