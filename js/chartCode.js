@@ -5,14 +5,14 @@ function BuildMixedChart(chart, labels, barVals, linVals) {
     data: {
       labels: labels, // Our labels
       datasets: [{
-        label: 'pages [toggle]', // Name the series
+        label: 'pages', // Name the series
         data: barVals, // Our values
 		backgroundColor: 'rgba(255, 99, 132, 0.2)',
 		borderColor: 'rgba(255,99,132,1)',
         borderWidth: 1 // Specify bar border width
       },
 	  {
-        label: 'parts [toggle]', // Name the series
+        label: 'parts', // Name the series
         data: linVals, // Our values
 		backgroundColor: 'rgba(54, 162, 235, 0.2)',
 		borderColor: 'rgba(54, 162, 235, 1)',
