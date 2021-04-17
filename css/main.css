@@ -110,6 +110,12 @@ p {
 p small 	{ font-size: smaller; }
 p.multFoot	{ margin-top: -5px; margin-bottom: 25px; }
 p.notes		{ font-size: 8pt; }
+p.credit	{
+	font-size: smaller;
+	margin-top: -22px;
+	margin-left: 10px;
+	font-style: italic;
+}
 
 p > strong:first-child { 
 	border-left: groove 4px #B6C0C1; 
