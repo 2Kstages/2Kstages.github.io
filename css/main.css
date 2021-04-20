@@ -202,6 +202,7 @@ table.AtoZ th 					{ box-shadow: inset 0 0 10px rgba(217, 187, 161, 0.6) }
 table.AtoZ th, table.AtoZ td 	{ border: solid 1px #B6C0C1; }
 table.AtoZ tr.from				{ background-color: #182930; font-style: italic; }
 table.AtoZ td.section			{ border-style: none; padding-top: 1.5em; }  
+table.AtoZ td.bold				{ font-weight: bold; }  
 /*span.em						{ font-size: 12pt; font-style: bold; }*/
 	
 table.col8 th, table.col8 td 	{ padding: 0.3rem 0.25rem 0.3rem 0.25rem;}
