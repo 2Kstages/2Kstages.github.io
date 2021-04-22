@@ -195,7 +195,7 @@ table.gallery img 	{ width: 195px; }
 table#dataTable	{ display:none }
 table.three		{ width: 100%; }
 table.three td	{ width: 33%; }
-table.three li	{ list-style-type: none; }
+table.three li	{ list-style-type: none; font-size: smaller; }
 
 /*table.AtoZ_story8col 			{ margin-top: 1rem; } */
 table.AtoZ th 					{ box-shadow: inset 0 0 10px rgba(217, 187, 161, 0.6) }
@@ -207,6 +207,8 @@ table.AtoZ td.bold				{ font-weight: bold; }
 	
 table.col8 th, table.col8 td 	{ padding: 0.3rem 0.25rem 0.3rem 0.25rem;}
 table.col8 						{ font-size: 9pt; } 
+table.col10 th, table.col10 td 	{ padding: 0.3rem 0.2rem 0.3rem 0.2rem;}
+table.col10 					{ font-size: 8pt; }
 	
 /*------------------------*//*------------------------*//*------------------------*/
 /*side quotes*/
