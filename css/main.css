@@ -209,6 +209,9 @@ table.col8 th, table.col8 td 	{ padding: 0.3rem 0.25rem 0.3rem 0.25rem;}
 table.col8 						{ font-size: 9pt; } 
 table.col10 th, table.col10 td 	{ padding: 0.3rem 0.2rem 0.3rem 0.2rem;}
 table.col10 					{ font-size: 8pt; }
+
+table.subMenu 		{ border-style: none; }
+table.subMenu td	{ padding-top: 5px; padding-bottom: 5px; }
 	
 /*------------------------*//*------------------------*//*------------------------*/
 /*side quotes*/

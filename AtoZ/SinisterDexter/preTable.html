@@ -1,29 +1,49 @@
 <script src="../../js/Chart.min.js"></script>
 <h2>Sinister Dexter</h2>
 
-<p>Sinister and Dexter (two hitmen inspired by Jules and Vincent from Pulp Fiction) cruise the futuristic euro megacity of Downlode, aiming to whack first and ask funting questions later.</p>
+<p>Sinister and Dexter (two hitmen inspired by Jules and Vincent from Pulp Fiction) cruise the futuristic euro megacity of Downlode, aiming to whack first and ask the funting questions later.</p>
 
 <div id="menu">
-	{% if page.title == "A-Z Sinister Dexter (1995-1997)" %}<a class="disabled">1995-1997</a>
-	{% else %}<a href="1997.html">1995-1997</a>{% endif %}
-	
-	{% if page.title == "A-Z Sinister Dexter (1998)" %}<a class="disabled">1998</a>
-	{% else %}<a href="1998.html">1998</a>{% endif %}
-	
-	{% if page.title == "A-Z Sinister Dexter (1999-2000)" %}<a class="disabled">1999-2000</a>
-	{% else %}<a href="2000.html">1999-2000</a>{% endif %}
-	
-	{% if page.title == "A-Z Sinister Dexter (2001-2002)" %}<a class="disabled">2001-2002</a>
-	{% else %}<a href="2002.html">2001-2002</a>{% endif %}
-	
-	{% if page.title == "A-Z Sinister Dexter (2003-2007)" %}<a class="disabled">2003-2007</a>
-	{% else %}<a href="2007.html">2003-2007</a>{% endif %}
-	
-	{% if page.title == "A-Z Sinister Dexter (2008-2016)" %}<a class="disabled">2008-2016</a>
-	{% else %}<a href="2016.html">2008-2016</a>{% endif %}
-	
-	{% if page.title == "A-Z Sinister Dexter (2017-2020)" %}<a class="disabled">2017-2020</a>
-	{% else %}<a href="2020.html">2017-2020</a>{% endif %}
+
+	<table class="subMenu">
+	<tr>
+		<td>{% if page.title == "A-Z Sinister Dexter (1995-1996)" %}<a class="disabled">1995-1996</a>
+		{% else %}<a href="1996.html">1995-1996</a>{% endif %}</td>
+
+		<td>{% if page.title == "A-Z Sinister Dexter (1997)" %}<a class="disabled">1997</a>
+		{% else %}<a href="1997.html">1997</a>{% endif %}</td>
+		
+		<td>{% if page.title == "A-Z Sinister Dexter (1998)" %}<a class="disabled">1998</a>
+		{% else %}<a href="1998.html">1998</a>{% endif %}</td>
+
+		<td>{% if page.title == "A-Z Sinister Dexter (1999-2000)" %}<a class="disabled">1999-2000</a>
+		{% else %}<a href="2000.html">1999-2000</a>{% endif %}</td>
+
+		<td>{% if page.title == "A-Z Sinister Dexter (2001)" %}<a class="disabled">2001</a>
+		{% else %}<a href="2001.html">2001</a>{% endif %}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+		<td>{% if page.title == "A-Z Sinister Dexter (2002-2003)" %}<a class="disabled">2002-2003</a>
+		{% else %}<a href="2003.html">2002-2003</a>{% endif %}</td>
+	</tr>
+	<tr>
+		<td>{% if page.title == "A-Z Sinister Dexter (2004-2006)" %}<a class="disabled">2004-2006</a>
+		{% else %}<a href="2006.html">2004-2006</a>{% endif %}</td>
+
+		<td>{% if page.title == "A-Z Sinister Dexter (2007-2010)" %}<a class="disabled">2007-2010</a>
+		{% else %}<a href="2010.html">2007-2010</a>{% endif %}</td>
+		
+		<td>{% if page.title == "A-Z Sinister Dexter (2011-2016)" %}<a class="disabled">2011-2016</a>
+		{% else %}<a href="2016.html">2011-2016</a>{% endif %}</td>
+		
+		<td>{% if page.title == "A-Z Sinister Dexter (2017-2019)" %}<a class="disabled">2017-2019</a>
+		{% else %}<a href="2019.html">2017-2019</a>{% endif %}</td>
+
+		<td>{% if page.title == "A-Z Sinister Dexter (2020)" %}<a class="disabled">2020</a>
+		{% else %}<a href="2020.html">2020</a>{% endif %}</td>
+		
+		<td></td>
+	</tr>
+	</table>
 </div>
 
 <img src="sinDex.png" />
