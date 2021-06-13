@@ -108,6 +108,7 @@ p {
 	}	
 	
 p small 	{ font-size: smaller; }
+p#dataNote	{ margin-top: 15px; margin-bottom: -35px; }
 p.multFoot	{ margin-top: -5px; margin-bottom: 25px; }
 p.notes		{ font-size: 8pt; }
 p.credit	{
