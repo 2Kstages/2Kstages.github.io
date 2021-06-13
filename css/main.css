@@ -188,6 +188,18 @@ table.menu {
 table.menu th, table.menu td { 
 	padding: 0.25rem 0.5rem 0.25rem 1.5rem;
 	}
+	
+table.sections { 
+	text-align: center;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	}	
+	
+table.sections td { 
+	padding: 0.25rem 0.5rem 0.25rem 1.5rem;
+	}
+	
+table.sections td span { font-size: smaller; }
 
 table.gallery 		{ font-size: smaller; margin: 1rem 0; }
 table.gallery td 	{ padding: 0 2px; }
