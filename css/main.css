@@ -150,6 +150,12 @@ img.nobord {
 img.icon {
 	margin: 0 0 -3px 3px;
 	height: 16px;
+	position: absolute;
+	}
+	
+img.iconH {
+	margin: 0 0 -3px 3px;
+	height: 16px;
 	}
 
 main img {
