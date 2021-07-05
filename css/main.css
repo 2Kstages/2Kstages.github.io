@@ -306,3 +306,13 @@ div.border p { margin: 0; }
 .tt:hover .ttt, .tt:focus .ttt, .tt:active .ttt {
   visibility: visible;
 }
+
+/*------------------------*//*------------------------*//*------------------------*/
+/*Tharg Rating*/
+div#thargRating {
+	display: inline-block;
+	width: 160px;
+	height: 32px;
+	background: url(../../gfx/thargRating.png) no-repeat;
+	margin-bottom: -5px;
+	}
