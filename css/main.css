@@ -146,6 +146,13 @@ img.nobord {
 	border: none;
 	box-shadow: none;
 	}
+
+img.title {
+	border: none;
+	box-shadow: none;
+	margin: 0 0 -5px 11px;
+	height: 24px;	
+}
 	
 img.icon {
 	margin: 0 0 -3px 3px;
