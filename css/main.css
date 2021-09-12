@@ -90,6 +90,7 @@ footer 			{ padding: 1rem; text-align: center; }
 div#frontSpread { text-align: center; }	
 div#footerLink	{ margin-top: 2rem; margin-left: 0.5rem; font-weight: bold; }
 div.chart		{ margin-top: 2rem; }
+div.weeMenu		{ font-size: 8pt; margin-top: 0.5rem; }
 	
 
 /*------------------------*//*------------------------*//*------------------------*/	
@@ -222,6 +223,8 @@ table#dataTable	{ display:none }
 table.three		{ width: 100%; }
 table.three td	{ width: 33%; }
 table.three li	{ list-style-type: none; font-size: smaller; }
+table.three h3		{ margin-top: 2rem; }
+table.three h3 span { font-size: 8pt; }
 
 table.key { 
 	margin-top: 0.25rem;
