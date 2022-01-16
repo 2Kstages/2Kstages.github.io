@@ -121,9 +121,11 @@ p.credit	{
 }
 
 p > strong:first-child { 
+	/*
 	border-left: groove 4px #B6C0C1; 
 	border-radius: 5px;
 	padding-left: 5px;
+	*/
 	
 	/*
 	border-right: groove 4px #B6C0C1; 
