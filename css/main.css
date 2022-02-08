@@ -333,10 +333,18 @@ div.border p { margin: 0; }
 
 /*------------------------*//*------------------------*//*------------------------*/
 /*Tharg Rating*/
-div#thargRating {
+div#ratingContainer {
 	display: inline-block;
+	float: right;
+	width: 160px;
+	height: 32px;
+	text-align: center;
+	font-size: 8pt;
+	}
+
+div#thargRating {
+	margin-top: 7px;
 	width: 160px;
 	height: 32px;
 	background: url(../../gfx/thargRating.png) no-repeat;
-	margin-bottom: -5px;
 	}
