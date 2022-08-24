@@ -52,9 +52,9 @@ th { text-align: left; }
 
 body {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	font-size: normal;
-	background-color: #010B14;
-	color: #B6C0C1;
+	font-size: small;
+	background-color: #010B14; /*BACKGROUND*/
+	color: #B6C0C1; /*TEXT*/
 	display: grid;
 	height: 100vh;
 	grid-template-rows: auto 1fr auto;
@@ -64,8 +64,8 @@ body {
 /*COLOUR CHART
 
 	BACKGROUND: 		010B14
-	
 	TEXT:				B6C0C1
+	
 	IMAGE BORDER:		B6C0C1
 	IMAGE SHADOW:		rgba(182, 192, 193, 0.6)
 	
@@ -84,42 +84,62 @@ body {
 /*------------------------*//*------------------------*//*------------------------*/	
 /*layout*/	
 header 			{ padding: 1rem; text-align: center; }
-div#menu 		{ margin: 1rem 0 0; }
-div#menu a 		{ margin: 0 1rem; }
-main 			{ padding: 0 2.5rem; min-width: 0; } /*min-width fixes chart bug*/	
-footer 			{ padding: 1rem; text-align: center; }	
-div#frontSpread { text-align: center; }	
-div#footerLink	{ margin-top: 2rem; margin-left: 0.5rem; font-weight: bold; }
-div.chart		{ margin-top: 2rem; }
-div.weeMenu		{ font-size: 8pt; margin-top: 0.5rem; }
+	/*Also used for The ABC Warriors, Nemesis (A-Z)*/
+	div#menu 		{ margin: 1rem 0 0; } 
+	div#menu a 		{ margin: 0 1rem; }
 	
+main 			{ padding: 0 2.5rem; min-width: 0; } /*min-width fixes chart bug*/
+	/*home page*/
+	div#frontSpread { text-align: center; } 
+	/*stage pages*/	
+	div#footerLink	{ margin-top: 2rem; margin-left: 0.5rem; font-weight: bold; }
+	/*A-Z pages*/	
+	div.chart		{ margin-top: 2rem; }
+	/*A-Z home page*/
+	div.weeMenu		{ font-size: 80%; margin-top: 0.5rem; }
+	
+footer 			{ padding: 1rem; text-align: center; }	
+
 
 /*------------------------*//*------------------------*//*------------------------*/	
 /*miscellaneous*/	
 hr 			{ margin: 1rem 5rem; }
 hr.splitter	{ margin: 3rem 3rem 2rem 0; }
 
+/*Main header on each page, under menu.
+Also used as stage page sub-sections.*/
 h2 {
-	font-size: larger;
+	font-size: 150%;
 	margin: 2rem 0 1rem 0;
 	}
+	
+/*Sub-header on stage pages [+ other uses?]*/
+h3 { font-size: 115%; }
 
 p {
 	padding: 0.5rem 0;
 	line-height: 1.3;
 	}	
-	
-p small 	{ font-size: smaller; }
-p#dataNote	{ margin-top: 15px; margin-bottom: -35px; }
-p.multFoot	{ margin-top: -5px; margin-bottom: 25px; }
-p.notes		{ font-size: 8pt; }
+
+/*Stage pages: what happens next text*/	
+p small 	{ font-size: 80%; } 
+/*Stage pages: used to bottom-pad multi-para entries*/
+p.multFoot	{ margin-top: -0.3rem; margin-bottom: 1.6rem; }
+/*A-Z pages, above chart*/
+p#dataNote	{ margin-top: 0.9rem; margin-bottom: -2.2rem; }
+/*A-Z pages, below image*/
 p.credit	{
-	font-size: smaller;
-	margin-top: -22px;
-	margin-left: 10px;
+	font-size: 90%;
+	margin-top: -1.4rem;
+	margin-left: 0.6rem;
 	font-style: italic;
 }
 
+/*I was using this to create a sort of bullet-graphic
+where stage page story titles didn't always link out
+to the 2K ABC vids. I've since changed it so that each title
+links out to the A-Z, so this was no longer necessary (and
+anyway looked clunky).*/
 p > strong:first-child { 
 	/*
 	border-left: groove 4px #B6C0C1; 
@@ -135,45 +155,52 @@ p > strong:first-child {
 	border-radius: 5px;
 	*/
 	}
-	
+
+/*This fixed a situation with multi-para entries*/	
 p > strong:first-child.noEmph { border: none; padding: 0; }
 	
 
 /*------------------------*//*------------------------*//*------------------------*/
 /*images*/
+
+/*site logo*/
 img.border {
 	border: solid 1px #B6C0C1; 
-	border-radius: 5px;
+	border-radius: 0.3rem;
 	}
 
+/*home page, A-Z home icon table*/
 img.nobord {
 	border: none;
 	box-shadow: none;
 	}
 
+/*A-Z title icons*/
 img.title {
 	border: none;
 	box-shadow: none;
-	margin: 0 0 -5px 11px;
-	height: 24px;	
+	margin: 0 0 -0.3rem 0.7rem;
+	height: 1.5rem;	
 }
 	
-img.icon {
-	margin: 0 0 -3px 3px;
-	height: 16px;
-	position: absolute;
+/*A-Z home icon - top table*/		
+img.iconH {
+	margin: 0 0 -0.2rem 0.2rem;
+	height: 1rem;
 	}
 	
-img.iconH {
-	margin: 0 0 -3px 3px;
-	height: 16px;
+/*A-Z home icon - listings*/
+img.icon {
+	margin: -0.1rem 0 0 0.2rem;
+	height: 1rem;
+	position: absolute;
 	}
 
 main img {
 	margin: 1rem 0;
 	border: solid 2px #B6C0C1; 
-	border-radius: 5px;
-	box-shadow: 0 8px 6px -6px rgba(182, 192, 193, 0.6);
+	border-radius: 0.3rem;
+	box-shadow: 0 0.5rem 0.4rem -0.4rem rgba(182, 192, 193, 0.6);
 	}	
 
 /*------------------------*//*------------------------*//*------------------------*/	
@@ -192,84 +219,98 @@ ul li {
 	list-style-position: outside;
 	}
 
-ul.AtoZ { font-size: smaller; }
+/*A-Z bulleted links beneath the image*/	
+ul.AtoZ { font-size: 85%; }
 
 /*------------------------*//*------------------------*//*------------------------*/
 /*tables*/
+
+/*stages menu pages - progs, megs, spin-offs*/
 table.menu { 
 	text-align: left;
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 	}	
 	
-table.menu th, table.menu td { 
-	padding: 0.25rem 0.5rem 0.25rem 1.5rem;
-	}
+	table.menu th, table.menu td { 
+		padding: 0.25rem 0.5rem 0.25rem 1.5rem;
+		}
+
+/*stages pages - 3 span of cover images*/
+table.gallery 		{ font-size: 80%; margin: 1rem 0; }
+table.gallery td 	{ padding: 0 0.1rem; }
+table.gallery img 	{ width: 195px; margin-bottom: 0.5rem; }	
 	
+/*A-Z sub-menu tables for complex thrills*/
+/*SinDex*/
+table.subMenu 		{ border-style: none; }
+table.subMenu td	{ padding-top: 0.3rem; padding-bottom: 0.3rem; }
+	
+/*A-Z sub-menu tables for complex thrills*/
+/*Robo-Hunter, Rogue Trooper, Harlem Heroes, Mean Arena, Sam Slade,
+Anderson Psi Division, Slaine, Judge...*/	
 table.sections { 
 	text-align: center;
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 	}	
 	
-table.sections td { 
-	padding: 0.25rem 0.5rem 0.25rem 1.5rem;
-	}
-	
-table.sections td span { font-size: smaller; }
+	table.sections td { 
+		padding: 0.25rem 0.5rem 0.25rem 1.5rem;
+		}
+		
+	/*Used in (e.g.) Rogue Trooper's sub-menu*/	
+	table.sections td span { font-size: 80%; }
 
-table.gallery 		{ font-size: smaller; margin: 1rem 0; }
-table.gallery td 	{ padding: 0 2px; }
-table.gallery img 	{ width: 195px; }
-
+/*A-Z chart data containers*/
 table#dataTable	{ display:none }
+
+/*A-Z home page*/
 table.three		{ width: 100%; }
 table.three td	{ width: 33%; }
-table.three li	{ list-style-type: none; font-size: smaller; }
+table.three li	{ list-style-type: none; font-size: 90%; }
 table.three h3		{ margin-top: 2rem; }
-table.three h3 span { font-size: 8pt; }
+table.three h3 span { font-size: 70%; }
 
+/*A-Z icon info tables*/
 table.key { 
 	margin-top: 0.25rem;
 	margin-bottom: 1rem;
 	}
 
-table.key td {
-	padding: 0.25rem 0.5rem 0.25rem 1.5rem;
-	font-size: smaller;
-	width: 20%;
-}
+	table.key td {
+		padding: 0.25rem 0.5rem 0.25rem 1.5rem;
+		font-size: 90%;
+		width: 20%;
+	}
 
-/*table.AtoZ_story8col 			{ margin-top: 1rem; } */
-table.AtoZ th 					{ box-shadow: inset 0 0 10px rgba(217, 187, 161, 0.6) }
+/*A-Z Issues Key, A-Z pages*/
+table.AtoZ th 					{ box-shadow: inset 0 0 0.6rem rgba(217, 187, 161, 0.6) }
 table.AtoZ th, table.AtoZ td 	{ border: solid 1px #B6C0C1; }
 table.AtoZ tr.from				{ background-color: #182930; font-style: italic; }
-table.AtoZ td.section			{ border-style: none; padding-top: 1.5em; }  
+table.AtoZ td.section			{ border-style: none; padding-top: 1.5rem; }  
 table.AtoZ td.bold				{ font-weight: bold; }  
-/*span.em						{ font-size: 12pt; font-style: bold; }*/
-	
-table.col8 th, table.col8 td 	{ padding: 0.3rem 0.25rem 0.3rem 0.25rem;}
-table.col8 						{ font-size: 9pt; } 
-table.col10 th, table.col10 td 	{ padding: 0.3rem 0.2rem 0.3rem 0.2rem;}
-table.col10 					{ font-size: 8pt; }
 
-table.subMenu 		{ border-style: none; }
-table.subMenu td	{ padding-top: 5px; padding-bottom: 5px; }
+table.col8 th, table.col8 td 	{ padding: 0.3rem 0.25rem 0.3rem 0.25rem;}
+table.col8 						{ font-size: 90%; } 
+table.col10 th, table.col10 td 	{ padding: 0.3rem 0.2rem 0.3rem 0.2rem;}
+table.col10 					{ font-size: 80%; }
+
 	
 /*------------------------*//*------------------------*//*------------------------*/
 /*side quotes*/
 div.quote {
 		display: inline-block;
 		max-width: 75%; 
-		margin: 20px; 
-		padding: 15px 15px 0px 15px; 
+		margin: 1.25rem; 
+		padding: 0.9rem 0.9rem 0 0.9rem; 
 		border: solid 1px #D9BBA1; 
-		border-radius: 25px; 
+		border-radius: 1.6rem; 
 		background-color: #182930; 
 		color: #FFF7F0;
-		font-size: smaller;
-		box-shadow: inset 0 0 10px rgba(217, 187, 161, 0.6), 
-					0 0 10px 0 rgba(217, 187, 161, 0.6);
+		font-size: 90%;
+		box-shadow: inset 0 0 0.6rem rgba(217, 187, 161, 0.6), 
+					0 0 0.6rem 0 rgba(217, 187, 161, 0.6);
 	}
 	
 div.quote p	{ padding: 0.5rem; }
@@ -286,13 +327,14 @@ div.quote .spoiler:hover,
 div.quote .spoiler:focus, 
 div.quote .spoiler:active {color: #FFF7F0; cursor: pointer;}
 
+/*diceman stages*/
 div.border	{ 
 	border: solid 1px #B6C0C1; 
-	border-radius: 5px; 
-	margin: 15px 0px; 
-	padding: 5px;
-	box-shadow: inset 0 0 10px rgba(182, 192, 193, 0.6), 
-					0 0 10px 0 rgba(182, 192, 193, 0.6);
+	border-radius: 0.3rem; 
+	margin: 0.9rem 0; 
+	padding: 0.3rem;
+	box-shadow: inset 0 0 0.6rem rgba(182, 192, 193, 0.6), 
+					0 0 0.6rem 0 rgba(182, 192, 193, 0.6);
 	}
 	
 div.border p > strong:first-child { border: none; padding: 0; }
@@ -316,10 +358,10 @@ div.border p { margin: 0; }
   color: #FFF7F0;
   border: 1px solid #D9BBA1;
   text-align: left;
-  padding:4px 5px;
-  border-radius: 6px;
-  top: 5px;
-  left: 20px;
+  padding:0.25rem 0.3rem;
+  border-radius: 0.4rem;
+  top: 0.3rem;
+  left: 1.25rem;
  
   /* Position the tooltip text - see examples below! */
   position: absolute;
@@ -336,15 +378,15 @@ div.border p { margin: 0; }
 div#ratingContainer {
 	display: inline-block;
 	float: right;
-	width: 160px;
-	height: 32px;
+	width: 10rem;
+	height: 2rem;
 	text-align: center;
-	font-size: 8pt;
+	font-size: 75%;
 	}
 
 div#thargRating {
-	margin-top: 7px;
-	width: 160px;
-	height: 32px;
+	margin-top: 0.4rem;
+	width: 10rem;
+	height: 2rem;
 	background: url(../../gfx/thargRating.png) no-repeat;
 	}
