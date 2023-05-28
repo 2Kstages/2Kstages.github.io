@@ -316,6 +316,10 @@ div.quote {
 div.quote p	{ padding: 0.5rem; }
 
 /*------------------------*//*------------------------*//*------------------------*/
+/*NEEDS A FIX FOR TOUCH-SCREENS*/
+/*NEEDS A FIX FOR TOUCH-SCREENS*/
+/*NEEDS A FIX FOR TOUCH-SCREENS*/
+/*NEEDS A FIX FOR TOUCH-SCREENS*/
 /*spoilers*/
 .spoiler {color: #182930; background-color: #182930; }
 .spoiler:hover, 
@@ -327,6 +331,8 @@ div.quote .spoiler:hover,
 div.quote .spoiler:focus, 
 div.quote .spoiler:active {color: #FFF7F0; cursor: pointer;}
 
+
+/*------------------------*//*------------------------*//*------------------------*/
 /*diceman stages*/
 div.border	{ 
 	border: solid 1px #B6C0C1; 
@@ -343,6 +349,10 @@ div.border p { margin: 0; }
 /*------------------------*//*------------------------*//*------------------------*/
 /*tooltips*/
 
+/*NEEDS A FIX FOR TOUCH-SCREENS*/
+/*NEEDS A FIX FOR TOUCH-SCREENS*/
+/*NEEDS A FIX FOR TOUCH-SCREENS*/
+/*NEEDS A FIX FOR TOUCH-SCREENS*/
 /* Tooltip container */
 .tt {
   position: relative;
@@ -390,3 +400,33 @@ div#thargRating {
 	height: 2rem;
 	background: url(../../gfx/thargRating.png) no-repeat;
 	}
+	
+/*------------------------*//*------------------------*//*------------------------*/	
+/*Dreddverse World Map*/	
+div#worldMapHolder,
+div#mapBitHolder {
+	position: relative;
+	border: 1px solid #b3b3b3;
+	margin: 5px;
+	overflow: hidden;
+	width: 617px;
+	height: 307px;
+	}
+	
+div#mapBitHolder img { 
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin:0;
+	border-style: none;
+	width: 1564px;
+	height: 778px;
+	}
+	
+table#mapTable td {
+	vertical-align: top;
+}	
+
+h2#localeHeader  {
+	margin-top: 5px;
+}	
