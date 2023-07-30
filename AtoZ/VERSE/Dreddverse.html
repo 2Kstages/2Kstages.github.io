@@ -9,32 +9,26 @@ title: Dreddverse
 
 <h2>Dreddverse World Map</h2>
 
-<p>Upper map controls lower map (which has red-outlined data-clickables).</p>
+<p>Upper map controls lower map (where you can click on locations).</p>
 
-<table id="mapTable">
-	<tr>
-		<td>
-			<div id="worldMapHolder">
-				<canvas id="worldMap" width="617" height="307">
-					<p>Not supported.</p>
-				</canvas>
-			</div>	
-		</td>
-		<td>
-			<h2 id="localeHeader"></h2>
-		</td>
-	</tr>
-	<tr>
-		<td colspan="2">
-			<div id="mapBitHolder">
-				<canvas id="mapBit" width="617" height="307">
-					<p>Not supported.</p>
-				</canvas>
-				<img src="gfx/shim.gif" usemap="#mapBitActiveLayer" />
-				<map name="mapBitActiveLayer" id="mapBitActiveLayer">
-					<!--content is script generated-->
-				</map>
-			</div>	
-		</td>
-	</tr>
-</table>
+<div class="row">
+	<div class="column">
+		<div id="worldMapHolder">
+			<canvas id="worldMap" width="617" height="309">
+				<p>Not supported.</p>
+			</canvas>
+		</div>	
+		<div id="mapBitHolder">
+			<canvas id="mapBit" width="617" height="309">
+				<p>Not supported.</p>
+			</canvas>
+			<img src="gfx/shim.gif" usemap="#mapBitActiveLayer" />
+			<map name="mapBitActiveLayer" id="mapBitActiveLayer">
+				<!--content is script generated-->
+			</map>
+		</div>	
+	</div>
+	<div class="column">
+		<h2 id="localeHeader"></h2>
+	</div>
+</div>

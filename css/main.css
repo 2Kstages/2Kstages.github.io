@@ -403,6 +403,15 @@ div#thargRating {
 	
 /*------------------------*//*------------------------*//*------------------------*/	
 /*Dreddverse World Map*/	
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
 div#worldMapHolder,
 div#mapBitHolder {
 	position: relative;
@@ -410,7 +419,7 @@ div#mapBitHolder {
 	margin: 5px;
 	overflow: hidden;
 	width: 617px;
-	height: 307px;
+	height: 309px;
 	}
 	
 div#mapBitHolder img { 
@@ -419,14 +428,36 @@ div#mapBitHolder img {
 	left: 0;
 	margin:0;
 	border-style: none;
-	width: 1564px;
-	height: 778px;
+	width: 3000px;
+	height: 1504px;
 	}
-	
-table#mapTable td {
-	vertical-align: top;
-}	
 
 h2#localeHeader  {
 	margin-top: 5px;
+	font-size: 110%;
 }	
+
+p.desc  {
+	margin-top: -5px;
+	margin-bottom: 0;
+	padding: 0.1rem 0;
+	font-size: 100%;
+}
+
+ul.storyList { 
+	margin: 0.5rem 0;
+	}
+
+ul.storyList li { 
+	margin-bottom: 0;
+	list-style-type: none; 
+	font-size: 90%;
+	}
+	
+span.year { 
+	font-family: "Courier New", monospace;
+	}
+	
+span.keys { 
+	font-size: 80%;
+	}
