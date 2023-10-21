@@ -124,7 +124,7 @@ p {
 /*Stage pages: what happens next text*/	
 p small 	{ font-size: 80%; } 
 /*Stage pages: used to bottom-pad multi-para entries*/
-p.multFoot	{ margin-top: -0.3rem; margin-bottom: 1.6rem; }
+p.multFoot	{ margin-top: -0.3rem; margin-bottom: 0.6rem; }
 /*A-Z pages, above chart*/
 p#dataNote	{ margin-top: 0.9rem; margin-bottom: -2.2rem; }
 /*A-Z pages, below image*/
