@@ -16,7 +16,7 @@ Common = function() {
 	this.worldMapImage.onload = function () {
 		worldMapReady = true;
 	};
-	this.worldMapImage.src = "gfx/DWM.png";
+	this.worldMapImage.src = "gfx/DWM.webp";
 	
 	// worldMap image [SMALL]					
 	var worldMapReady_s = false;				
@@ -24,7 +24,7 @@ Common = function() {
 	this.worldMapImage_s.onload = function () {	
 		worldMapReady_s = true;					
 	};
-	this.worldMapImage_s.src = "gfx/DWM_s.png";	
+	this.worldMapImage_s.src = "gfx/DWM_s.webp";	
 	
 	//variables for inset rectangle on main map
 	//(get set inside the initPage function)
