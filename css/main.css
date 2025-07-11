@@ -358,9 +358,10 @@ div.border p { margin: 0; }
   position: relative;
   display: inline-block;
   border-bottom: 1px dotted #D9BBA1; /* If you want dots under the hoverable text */
+  cursor: pointer;
 }
 
-/* Tooltip text */
+/* REPLACING OLD CSS-ONLY SOLUTION WITH JS/CSS SOLUTION 
 .tt .ttt {
   visibility: hidden;
   width: auto;
@@ -373,14 +374,48 @@ div.border p { margin: 0; }
   top: 0.3rem;
   left: 1.25rem;
  
-  /* Position the tooltip text - see examples below! */
   position: absolute;
   z-index: 1;
 }
 
-/* Show the tooltip text when you mouse over the tooltip container */
 .tt:hover .ttt, .tt:focus .ttt, .tt:active .ttt {
   visibility: visible;
+}
+*/
+
+.tt .ttt {
+  display: none;
+  position: absolute;
+  top: 0.3rem;
+  left: 1.25rem;
+  background-color: #182930;
+  color: #FFF7F0;
+  border: 1px solid #D9BBA1;
+  padding: 0.4rem 2rem 0.4rem 0.6rem; /* top, right, bottom, left */
+  border-radius: 0.4rem;
+  z-index: 1;
+  width: max-content;
+  max-width: 90vw;  
+  word-break: break-word;
+}
+
+/* Show tooltip when active */
+.tt .ttt.active {
+  display: block;
+}
+
+/* Style for close button (added by JS) */
+.ttt-close {
+  position: absolute;
+  top: 0.2rem;
+  right: 0.3rem;
+  background: none;
+  border: none;
+  color: #FFF7F0;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
 }
 
 /*------------------------*//*------------------------*//*------------------------*/

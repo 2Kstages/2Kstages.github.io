@@ -75,3 +75,48 @@ var pages = json.map(function (e) {
 });
 
 var chart = BuildMixedChart("mixedChart", labels, pages, episodes);
+
+
+
+
+//testing new click solution for tool tip text:
+
+document.querySelectorAll('.tt .ttt').forEach(function(tooltip) {
+  // Add close button if it doesn't exist
+  if (!tooltip.querySelector('.ttt-close')) {
+    var closeBtn = document.createElement('button');
+    closeBtn.className = 'ttt-close';
+    closeBtn.setAttribute('aria-label', 'Close tooltip');
+    closeBtn.innerHTML = '&times;';
+    // Insert close button at the end of tooltip content
+    tooltip.appendChild(closeBtn);
+  }
+});
+
+document.querySelectorAll('.tt').forEach(function(tt) {
+  var tooltip = tt.querySelector('.ttt');
+  var closeBtn = tooltip.querySelector('.ttt-close');
+
+  // Show tooltip on click
+  tt.addEventListener('click', function(event) {
+    // Hide any other open tooltips
+    document.querySelectorAll('.tt .ttt.active').forEach(function(openTooltip) {
+      if (openTooltip !== tooltip) openTooltip.classList.remove('active');
+    });
+    tooltip.classList.add('active');
+    event.stopPropagation();
+  });
+
+  // Hide tooltip on close button click
+  closeBtn.addEventListener('click', function(event) {
+    tooltip.classList.remove('active');
+    event.stopPropagation();
+  });
+});
+
+// Hide tooltip when clicking outside
+document.addEventListener('click', function() {
+  document.querySelectorAll('.tt .ttt.active').forEach(function(openTooltip) {
+    openTooltip.classList.remove('active');
+  });
+});
